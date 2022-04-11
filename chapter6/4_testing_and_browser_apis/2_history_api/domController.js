@@ -72,6 +72,7 @@ const handleUndo = () => {
 };
 
 const handlePopstate = () => {
+  console.log(`Triiger pop state at domController`);
   data.inventory = history.state ? history.state.inventory : {};
   updateItemList(data.inventory);
 };
